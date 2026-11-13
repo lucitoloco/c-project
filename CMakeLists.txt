@@ -31,3 +31,13 @@ target_link_libraries(a5a_fahrt PRIVATE tui m)
 
 add_executable(a5b_spiel src/uebungen/a5b_spiel.c)
 target_link_libraries(a5b_spiel PRIVATE tui m)
+
+add_library(uboot_logik src/spiel/welt.c src/spiel/uboot.c)
+target_link_libraries(uboot_logik PUBLIC m)
+target_include_directories(uboot_logik PUBLIC src/spiel)
+
+add_executable(a6_uboot src/spiel/main.c)
+target_link_libraries(a6_uboot PRIVATE tui uboot_logik)
+
+add_executable(a6_test src/spiel/test_spiel.c)
+target_link_libraries(a6_test PRIVATE uboot_logik)
