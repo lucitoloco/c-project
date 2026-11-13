@@ -13,3 +13,9 @@ target_compile_options(tui PRIVATE -Wall -Wextra)
 
 add_executable(a1_hallo src/uebungen/a1_hallo.c)
 target_link_libraries(a1_hallo PRIVATE tui)
+
+add_executable(a2_uboot src/uebungen/a2_uboot.c)
+target_link_libraries(a2_uboot PRIVATE tui)
+
+add_executable(a2_uboot src/uebungen/a3_welt.c)
+target_link_libraries(a3_welt PRIVATE tui)
