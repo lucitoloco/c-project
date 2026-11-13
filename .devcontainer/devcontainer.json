@@ -1,6 +1,9 @@
 {
     "name": "c-project-devcontainer",
     "image": "mcr.microsoft.com/devcontainers/cpp:1-debian-12",
+    "features": {
+        "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+    },
     "customizations": {
         "vscode": {
             "extensions": [
