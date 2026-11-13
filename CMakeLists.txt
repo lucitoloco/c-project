@@ -28,3 +28,6 @@ target_link_libraries(a4_level PRIVATE tui)
 
 add_executable(a5a_fahrt src/uebungen/a5a_fahrt.c)
 target_link_libraries(a5a_fahrt PRIVATE tui m)
+
+add_executable(a5b_spiel src/uebungen/a5b_spiel.c)
+target_link_libraries(a5b_spiel PRIVATE tui m)
